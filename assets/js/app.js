@@ -29,17 +29,37 @@ function scrollFunction() {
 }
 
 backToTopButton.addEventListener('click', () => {
-    // When the user clicks on the button, scroll to the top of the document
-    /*     document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-     */
+    doScrollTo('body');
+});
+
+getElement('#tarif-btn').onclick = (event) => {
+    event.preventDefault();
+    doScrollTo('#tarif');
+}
+getElement('#services-btn').onclick = (event) => {
+    event.preventDefault();
+    doScrollTo('#services');
+}
+
+function doScrollTo(selector) {
+    const ELEMENT = getElement(selector);
+    const ELEMENT_POSITION = ELEMENT.offsetTop;
+    const FROM_POSITION = document.documentElement.scrollTop || document.body.scrollTop;
 
     const scrollToTop = () => {
-        const c = document.documentElement.scrollTop || document.body.scrollTop;
-        if (c > 0) {
+        const ACTUAL_POSITION = document.documentElement.scrollTop || document.body.scrollTop;
+        if (ACTUAL_POSITION < ELEMENT_POSITION && FROM_POSITION < ELEMENT_POSITION) {
             window.requestAnimationFrame(scrollToTop);
-            window.scrollTo(0, c - c / 8);
+            window.scrollTo(0, ACTUAL_POSITION + (ELEMENT_POSITION - ACTUAL_POSITION) / 8 + 1);
+        } else if (ACTUAL_POSITION > ELEMENT_POSITION && FROM_POSITION > ELEMENT_POSITION) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, ACTUAL_POSITION - (ACTUAL_POSITION - ELEMENT_POSITION) / 8);
         }
     };
     scrollToTop();
-})
+
+}
+
+function getElement(selector) {
+    return document.querySelector(selector);
+}
