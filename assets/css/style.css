@@ -4154,6 +4154,7 @@ main {
 .section-intro .row .intro-part-1 .title {
   font-size: 60px;
   line-height: 55px;
+  font-weight: 400;
 }
 .section-intro .row .intro-part-1 .para {
   margin-top: 15px;
@@ -4260,13 +4261,13 @@ main {
 }
 .section-2 {
   margin-top: 120px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .section-2 h2 {
   font-size: 45px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .section-2 p {
   padding: 0 12px;
@@ -4279,7 +4280,6 @@ main {
   font-size: 45px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 .section-3 h3 {
   font-size: 40px;
@@ -4446,7 +4446,7 @@ main {
 .section-tarif .card {
   padding: 30px 20px;
   margin: 20px;
-  height: 400px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4538,7 +4538,7 @@ button {
 .modal-container {
   position: fixed;
   height: 100vh;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
   z-index: 300;
   background-color: rgba(1, 8, 14, 0.3);
   display: none;

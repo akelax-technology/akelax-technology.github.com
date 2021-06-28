@@ -33,6 +33,7 @@ backToTopButton.addEventListener('click', () => {
     /*     document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
      */
+
     const scrollToTop = () => {
         const c = document.documentElement.scrollTop || document.body.scrollTop;
         if (c > 0) {
