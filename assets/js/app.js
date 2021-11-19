@@ -1,6 +1,23 @@
 const modalContainer = document.querySelector('.modal-container');
 const modal = document.querySelector('.modal');
 const toggleModalButton = document.querySelectorAll('.toggle-modal');
+const header = document.querySelector('header');
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instance = M.Carousel.init(elems);
+
+    setInterval(() => {
+        instance.next();
+    }, 100);
+});
+
+
+const handleScroll = () => {
+    alert('dflsdf')
+}
+
+window.onscroll = handleScroll;
 
 const backToTopButton = document.querySelector('.back-to-top');
 

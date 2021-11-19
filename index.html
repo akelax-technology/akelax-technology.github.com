@@ -15,11 +15,16 @@
     <meta name="author" content="Akelax" />
 
     <!-- Favicons -->
-    <link href="./assets/images/icons/lax_logo.png" rel="icon">
+    <link href="./assets/images/logo/IMG-20211027-WA0007.jpg" rel="icon">
 
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <script src="./assets/js/materialize.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYSSPHWGNH"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -33,9 +38,13 @@
 </head>
 
 <body class="">
-    <header class="white pd">
-        <nav class="z-depth-0 black-text">
-            <h1 class="principal-title"><a href="index.html">Akelax Technologie</a></h1>
+    <header class="pd">
+        <nav class="z-depth-2 white-text">
+            <h1 class="principal-title">
+                <a href="index.html" class="header-logo">
+                    <img src="./assets/images/logo/lax_logo.png" alt="">
+                </a>
+            </h1>
             <div class="nav-wrapper">
                 <ul id="nav-mobile" class="center hide-on-med-and-down">
                     <li><a href="/" id="">Acceuil</a></li>
@@ -45,7 +54,7 @@
                 </ul>
             </div>
             <div>
-                <a href="#contact" class="btn toggle-modal ">Contact</a>
+                <a href="#contact" class="btn z-depth-1 toggle-modal ">Contact</a>
             </div>
         </nav>
     </header>
@@ -84,7 +93,48 @@
                 </div>
             </div>
         </div>
-        <section class="section-intro  grey lighten-4  p-relative">
+        <section class="section-intro">
+            <div class="back-layer">
+                <div class="scroll-affiche-container">
+                    <ul>
+                        <li><img src="./assets/images/logo/Capture web_24-10-2021_18502_localhost.jpeg" alt=""></li>
+                        <li><img src="./assets/images/logo/accueil mobil.jpg" alt=""></li>
+                        <li><img src="./assets/images/logo/Screenshot_20211101-121444.png" alt=""></li>
+                        <li><img src="./assets/images/logo/Capture web_24-10-2021_18502_localhost.jpeg" alt=""></li>
+                        <li><img src="./assets/images/Screenshot from 2021-06-02 11-30-08.png" alt=""></li>
+                        <li><img src="./assets/images/services/balazs-ketyi-sScmok4Iq1o-unsplash.jpg" alt=""></li>
+                        <li><img src="./assets/images/logo/ruby phone 2.png" alt=""></li>
+                        <li><img src="./assets/images/logo/ruby phone 2.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-layer pd">
+                <div class="row">
+
+                    <div class="col s12 m12 l6 p-relative">
+                        <div class=" p-relative">
+                            <!-- 
+                            <div class="losange z-depth-1"></div> -->
+                            <div class="text-container z-depth-1">
+                                <h1 class="white-text">
+                                    <strong class="white-text">
+                                    Laissez-nous créer votre <br>
+                                    <b class="blue-text text-lighten-4">
+                                        Site ou appli  
+                                </b><br>web
+                                </strong>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l6 right right-align">
+                        <a class="btn btn-right toggle-modal z-depth-2">Contactez-nous <img src="./assets/images/arrow_right_alt_black_24dp.svg" alt="direction"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--         <section class="section-intro  grey lighten-4  p-relative">
             <div class="row">
                 <div class="col s12 m6 l6 xl6 grey lighten-4 intro-part-1">
                     <div>
@@ -118,12 +168,24 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
         <section class="section-2 pd ">
             <h2>Pourquoi nous ?</h2>
             <p>Nous sommes une equipe des jeunes développeurs informatiques, électroniciens, electriciens, ...etc. motivé pour travailler sur tout type de projet (IT, IOT, web, industriel, domotique, scientique, ...)
                 <b>de manière agile</b>.</p>
         </section>
+
+        <section>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+            </div>
+        </section>
+
         <section class="section-3" id="services">
             <h2>Nos services</h2>
             <div>
