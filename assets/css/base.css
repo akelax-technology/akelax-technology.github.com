@@ -108,6 +108,26 @@ nav a {
     color: white;
 }
 
+
+/* 
+#487cff
+#3459b6
+#8aaafc
+
+*/
+
+.bg-color {
+    background-color: #3459b6;
+}
+
+.bg-color-1 {
+    background-color: #487cff;
+}
+
+.bg-color-2 {
+    background-color: #8aaafc;
+}
+
 .bg-color-3 {
     background-color: #f5f5ff;
 }
