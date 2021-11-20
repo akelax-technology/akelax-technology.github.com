@@ -534,14 +534,15 @@ strong {
     right: 20px;
     padding: 10px;
     width: 53px;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 17px 0 #595d5f;
+    border-radius: 9px 9px 0 0;
     z-index: 2;
     transition: all 0.4s !important;
 }
 
 .back-to-top:hover {
-    background-color: #6f96b1 !important;
+    background-color: #e8edfa !important;
+    box-shadow: none;
+    border: 1px solid #3459b6;
 }
 
 .back-to-top:hover img {
