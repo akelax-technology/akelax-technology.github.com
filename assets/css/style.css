@@ -4718,6 +4718,10 @@ button {
     border-radius: 12px;
 }
 
+.full-width {
+    width: 100%;
+}
+
 .btn {
     border-radius: 9px;
     color: white;

@@ -130,6 +130,7 @@ nav a {
     z-index: 1;
     border-radius: 18px;
     padding: 20px;
+    width: 100%;
     background: rgba(10, 24, 71, 0.377);
     backdrop-filter: blur(6px);
 }
