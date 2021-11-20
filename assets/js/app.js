@@ -6,15 +6,16 @@ const header = document.querySelector('header');
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, {
-        numVisible: 4,
         indicators: true,
     });
-
-    var instance = M.Carousel.getInstance(getElement('#carousel-1'));
+    var instance = M.Carousel.init(getElement('#carousel-1'), {
+        indicators: true,
+        fullWidth: true
+    });
 
     setInterval(() => {
         instance.next();
-    }, 3000);
+    }, 4000);
 });
 
 

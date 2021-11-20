@@ -62,7 +62,7 @@ nav {
 
 main {
     width: 100%;
-    top: -77px;
+    top: -70px;
 }
 
 .section-intro {
@@ -500,24 +500,19 @@ button {
     padding: 0;
 }
 
-body {
-    position: relative;
-    font-family: Archivo;
-    color: #01052a;
-    transition: all 0.4s;
-}
-
 strong {
     color: #2C374C;
 }
 
 .pd {
-    padding: 0 80px !important;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
 }
 
 @media only screen and (max-width: 772px) {
     .pd {
-        padding: 0 12px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 }
 
