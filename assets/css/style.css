@@ -4702,7 +4702,6 @@ a {
 
 a:hover,
 button:hover {
-    color: #63b8f0;
     cursor: pointer;
 }
 
@@ -4711,15 +4710,18 @@ button {
     outline: none;
 }
 
+.bdr-18 {
+    border-radius: 18px;
+}
+
+.bdr-12 {
+    border-radius: 12px;
+}
+
 .btn {
-    padding: 10px 14px;
-    border-radius: 10px;
+    border-radius: 9px;
     color: white;
-    background: linear-gradient(90deg, #3459b6, #01052a);
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: max-content;
 }
 
 .btn-right {
@@ -4818,8 +4820,6 @@ button {
 * {
     margin: 0;
     padding: 0;
-    top: 0;
-    left: 0;
 }
 
 body {

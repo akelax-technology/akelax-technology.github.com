@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    left: 0;
-    top: 0;
 }
 
 
@@ -59,7 +57,7 @@ nav a {
     position: relative;
     width: 100%;
     height: 105vh;
-    background: linear-gradient( #3459b6, #ffffff);
+    background: linear-gradient( #3459b6, #3459b6, #ffffff);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,6 +69,7 @@ nav a {
     width: 300px;
     height: 100%;
     max-width: 100%;
+    top: 0;
     left: auto;
     right: 195px;
     overflow: hidden;
@@ -94,14 +93,13 @@ nav a {
 .scroll-affiche-container img {
     width: 100%;
     border: 3px solid white;
-    box-shadow: 0px 3px 6px 0px #0004225d;
     border-radius: 18px;
     opacity: 0.9;
 }
 
 @keyframes scroll {
     from {
-        transform: translateY(-100%);
+        transform: translateY(-95%);
     }
     to {
         transform: translateY(0%);
@@ -110,78 +108,30 @@ nav a {
 
 .text-layer {
     padding-top: 80px;
+    top: 0;
     position: absolute;
     z-index: 2;
     height: 120vh;
     width: 100%;
 }
 
-.losange {
-    position: absolute;
-    z-index: 0;
-    width: 110%;
-    height: 303px;
-    background: #3459b6;
-    transform: translate3d(-6%, 9px, 0) rotate(0deg);
-    /* 
-    box-shadow: 4px 4px 13px 0px #0004221a; */
-}
-
 .text-layer .row {
     height: 100%;
 }
 
-.text-layer .row .col:first-child {
+.text-layer .row .text-container {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.text-layer .row .col:first-child>div {
-    width: 100%;
-}
-
-.text-layer .text-container {
+.text-layer .text-container>div {
     position: relative;
     z-index: 1;
-    border-radius: 21px 21px 21px 21px;
-    background-color: #3459b688;
+    border-radius: 18px;
     padding: 20px;
-    backdrop-filter: blur(5px);
-    animation: losange 10s infinite 0s alternate ease-in-out;
-}
-
-@keyframes losange {
-    from {
-        background: #487cff85;
-        backdrop-filter: blur(5px);
-        transform: translate3d(0, 9px, 0) rotate(3deg);
-    }
-    20% {
-        background: #3459b688;
-        backdrop-filter: blur(5px);
-        transform: translate3d(0, 0px, 0) rotate(-3deg);
-    }
-    40% {
-        background: #495eb981;
-        backdrop-filter: blur(5px);
-        transform: translate3d(0, 9px, 10px) rotate(9deg);
-    }
-    60% {
-        background: #3459b68c;
-        backdrop-filter: blur(5px);
-        transform: translate3d(0, 0px, 0) rotate(-9deg);
-    }
-    80% {
-        background: #487cff80;
-        backdrop-filter: blur(5px);
-        transform: translate3d(0, -10px, 10px) rotate(12deg);
-    }
-    to {
-        background: #3459b662;
-        backdrop-filter: blur(5px);
-        transform: translate3d(-0px, 3px, 0) rotate(-12deg);
-    }
+    background: rgba(10, 24, 71, 0.377);
+    backdrop-filter: blur(6px);
 }
 
 .text-layer .row h1 {
@@ -207,7 +157,7 @@ nav a {
         margin: 0 20px;
     }
     .text-layer .row h1 {
-        font-size: 36px;
+        font-size: 42px;
         color: silver !important;
     }
 }
