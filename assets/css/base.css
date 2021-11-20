@@ -1,6 +1,74 @@
+@font-face {
+    font-family: Archivo;
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lexend-Light;
+    src: url("../fonts/Lexend/Lexend-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lexend-Thin;
+    src: url("../fonts/Lexend/Lexend-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lexend-Medium;
+    src: url("../fonts/Lexend/Lexend-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lexend-Regular;
+    src: url("../fonts/Lexend/Lexend-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lexend-SemiBold;
+    src: url("../fonts/Lexend/Lexend-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lexend-Bold;
+    src: url("../fonts/Lexend/Lexend-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Lexend-ExtraBold;
+    src: url("../fonts/Lexend/Lexend-ExtraBold.ttf") format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+.text-light {
+    font-family: "Lexend-Light", sans-serif;
+}
+
+.text-thin {
+    font-family: "Lexend-Thin", sans-serif;
+}
+
+.text-medium {
+    font-family: "Lexend-Medium", sans-serif;
+}
+
+.text-regular {
+    font-family: "Lexend-Regular", sans-serif;
+}
+
+.text-semibold {
+    font-family: "Lexend-SemiBold", sans-serif;
+}
+
+.text-bold {
+    font-family: "Lexend-Bold", sans-serif;
+}
+
+.text-extrabold {
+    font-family: "Lexend-ExtraBold", sans-serif;
 }
 
 
@@ -29,6 +97,11 @@ nav a {
     color: white;
 }
 
+.section {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
 .principal-title {
     display: flex;
     justify-content: center;
@@ -48,9 +121,7 @@ nav a {
 }
 
 .section-intro {
-    max-height: 100vh !important;
     min-height: 100vh !important;
-    position: relative;
 }
 
 .back-layer {

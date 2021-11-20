@@ -5,14 +5,16 @@ const header = document.querySelector('header');
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
-    var instance = M.Carousel.init(elems, {
+    var instances = M.Carousel.init(elems, {
         numVisible: 4,
         indicators: true,
     });
 
+    var instance = M.Carousel.getInstance(getElement('#carousel-1'));
+
     setInterval(() => {
         instance.next();
-    }, 1000);
+    }, 3000);
 });
 
 
