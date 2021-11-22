@@ -59,11 +59,20 @@
                 </ul>
             </div>
             <div>
-                <a href="#contact" class="btn toggle-modal blue z-depth-0">Contact</a>
+                <a href="#contact" class="btn white blue-text bdr z-depth-0 waves-effect waves-light modal-trigger" href="#modal1">Contact</a>
             </div>
         </nav>
     </header>
     <main class="p-relative">
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Nos contacts</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+            </div>
+        </div>
         <div class="modal-container">
             <div class="modal white z-depth-5 p-relative">
                 <div class="modal-header">
@@ -94,7 +103,7 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn toggle-modal">Fermer</button>
+                    <button class="waves-effect waves-light btn modal-trigger" href="#modal1">Fermer</button>
                 </div>
             </div>
         </div>
@@ -133,7 +142,7 @@
                             </p>
                             <br>
                             <div class="row">
-                                <div class="col s12 m6 ">
+                                <div class="col s12 m6 card z-depth-0 transparent">
                                     <a class="btn full-width  blue-text white btn-large">Contactez-nous </a>
                                     <br>
                                 </div>
@@ -155,11 +164,12 @@
                             <p class="white-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, beatae.</p>
                             <br>
                             <div class="row">
-                                <div class="col s12 m6 ">
-                                    <a class="btn full-width  blue-text white btn-large">Contactez-nous </a>
+                                <div class="col s12 m6">
+                                    <a class="btn full-width  blue-text white btn-large waves-effect waves-light modal-trigger" href="#modal1">Contactez-nous </a>
+                                    <br>
                                 </div>
                                 <div class="col s12 m6 ">
-                                    <a class="btn full-width blue btn-large ">Commandez</a>
+                                    <a class="btn full-width blue btn-large waves-effect waves-light modal-trigger" href="#modal1">Commandez</a>
                                 </div>
                             </div>
                         </div>
@@ -171,15 +181,18 @@
         </section>
 
         <section class="pd bg-color-3 section">
+            <!-- Modal Trigger -->
+            <!-- Modal Structure -->
+
             <h2 class="center-align text-semibold">Pourquoi nous ?</h2>
-            <p class="center-align">Nous sommes une equipe des jeunes développeurs informatiques, électroniciens, electriciens, ...etc. motivé pour travailler sur tout type de projet (IT, IOT, web, industriel, domotique, scientique, ...)
+            <p class="text-justified">Nous sommes une equipe des jeunes développeurs informatiques, électroniciens, electriciens, ...etc. motivé pour travailler sur tout type de projet (IT, IOT, web, industriel, domotique, scientique, ...)
                 <b>de manière agile</b>.
             </p>
             <br><br>
             <ul class="row row-centered">
                 <div class="col s12 m4 list-none">
                     <li class="white pd20 row bdr-18" style="margin-bottom: 10px; display: flex;">
-                        <i class=" red-text text-lighten-1">
+                        <i class=" yellow-text text-darken-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
                             <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
                             <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
@@ -193,13 +206,13 @@
                     </i>
                     </li>
                     <li class="white pd20 row bdr-18" style="margin-bottom: 10px; display: flex;">
-                        <i class=" blue-text text-lighten-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
-                            <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
-                            <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <i class=" red-text text-lighten-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                           </svg>
                     </i>
-                        <p style="flex: 1; margin-left: 20px; font-size: 18px;">Simplicité</p>
+                        <p style="flex: 1; margin-left: 20px; font-size: 18px;">Sécurisé</p>
                         <i class=" green-text text-lighten-1"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
                         <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
                         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
@@ -207,7 +220,7 @@
                     </i>
                     </li>
                     <li class="white pd20 row bdr-18" style="margin-bottom: 10px; display: flex; font-size: 18px;">
-                        <i class=" green-text text-lighten-1">
+                        <i class=" indigo-text text-lighten-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
                             <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
@@ -215,7 +228,7 @@
                             <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
                           </svg>
                     </i>
-                        <p style="flex: 1; margin-left: 20px;">Inclusion financière</p>
+                        <p style="flex: 1; margin-left: 20px;">Moderne</p>
                         <i class=" green-text text-lighten-1"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
                         <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
                         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
@@ -223,22 +236,22 @@
                     </i>
                     </li>
                 </div>
-                <div class="col s12 m4 center-align" style="margin-bottom: 10px; height: max-content;">
+                <div class="col s12 m4 center-align" style="margin-bottom: 10px; height: 400px;">
                     <div class="carousel carousel-slider center bdr-18 " id="carousel-1">
                         <div class="carousel-fixed-item center">
-                            <a class="btn waves-effect white grey-text darken-text-2">Contactez nous</a>
+                            <a class="btn waves-effect white blue-text darken-text-3 waves-effect waves-light modal-trigger" href="#modal1">Contactez nous</a>
                         </div>
                         <div class="carousel-item row-centered  white-text" href="#one!">
-                            <img src="./assets/images/undraw_connection_b-38-q.svg">
+                            <img style="margin-bottom: 10px; height: 400px;" src="./assets/images/undraw_connection_b-38-q.svg">
                         </div>
                         <div class="carousel-item row-centered  white-text" href="#two!">
-                            <img src="./assets/images/undraw_features_overview_jg-7-a.svg">
+                            <img style="margin-bottom: 10px; height: 400px;" src="./assets/images/undraw_features_overview_jg-7-a.svg">
                         </div>
                         <div class="carousel-item row-centered  white-text" href="#three!">
-                            <img src="./assets/images/undraw_work_chat_re_qes4.svg">
+                            <img style="margin-bottom: 10px; height: 400px;" src="./assets/images/undraw_work_chat_re_qes4.svg">
                         </div>
                         <div class="carousel-item row-centered  white-text" href="#four!">
-                            <img src="./assets/images/undraw_business_plan_re_0v81.svg">
+                            <img style="margin-bottom: 10px; height: 400px;" src="./assets/images/undraw_business_plan_re_0v81.svg">
                         </div>
                     </div>
                 </div>
@@ -249,14 +262,13 @@
                         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
                       </svg>
                     </i>
-                        <p class="right-align" style="flex: 1; margin-right: 20px; font-size: 18px;">Fiabilité</p>
-                        <i class=" green-text text-lighten-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-                          </svg>
-                    </i>
+                        <p class="right-align" style="flex: 1; margin-right: 20px; font-size: 18px;">Simplicité</p>
+                        <i class=" blue-text text-lighten-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+                                <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+                                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            </svg>
+                        </i>
                     </li>
                     <li class="white pd20 row bdr-18" style="margin-bottom: 10px; display: flex;">
                         <i class=" green-text text-lighten-1"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
@@ -264,11 +276,12 @@
                         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
                       </svg>
                     </i>
-                        <p class="right-align" style="flex: 1; margin-right: 20px; font-size: 18px;">Sécurisé</p>
-                        <i class=" red-text text-lighten-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
-                            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
-                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        <p class="right-align" style="flex: 1; margin-right: 20px; font-size: 18px;">Fiabilité</p>
+                        <i class=" blue-text text-lighten-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
                           </svg>
                     </i>
                     </li>
@@ -306,7 +319,7 @@
                             <h4>Creation des <b class="blue-text text-lighten-2">sites & appli web</b></h4>
                             <p class="para">Nous développons des sites vitrines convivials, des sites e-commerces, des applications web lourd, toujours interactives et intuitives.</p>
                             <div class="btn-container">
-                                <a href="#" class="btn toggle-modal">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
                             </div>
                         </div>
                     </div>
@@ -319,7 +332,7 @@
                             </h4>
                             <p class="para">Vous avez besoin d'une application de gestion, de communication, ...etc, nous proposons des applications sur mesure, car votre satisfaction est notre priorité</p>
                             <div class="btn-container">
-                                <a href="#" class="btn toggle-modal">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
                             </div>
                         </div>
                         <div class="col s12 m6 l6 xl6 p-relative part-1">
@@ -342,7 +355,7 @@
                             </h4>
                             <p class="para">Vous avez besoin d'une application de gestion, de communication, ...etc, nous proposons des applications sur mesure, car votre satisfaction est notre priorité</p>
                             <div class="btn-container">
-                                <a href="#" class="btn toggle-modal">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
                             </div>
                         </div>
                     </div>
@@ -382,7 +395,7 @@
                                 suscipit
                             </p>
                             <div class="btn-container">
-                                <a href="#" class="btn toggle-modal">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
                             </div>
                         </div>
                     </div>
@@ -395,7 +408,7 @@
                             </h4>
                             <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, cumque? Aliquid consequatur, voluptatibus aspernatur dignissimos minima commodi rerum suscipit facere dolorem a nihil excepturi et culpa!</p>
                             <div class="btn-container">
-                                <a href="#" class="btn toggle-modal">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
                             </div>
                         </div>
                         <div class="col s12 m6 l6 xl6 p-relative part-1">
@@ -418,21 +431,10 @@
                             </h4>
                             <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, cumque? Aliquid consequatur, voluptatibus aspernatur dignissimos minima commodi rerum suscipit facere dolorem a nihil excepturi et culpa!</p>
                             <div class="btn-container">
-                                <a href="#" class="btn toggle-modal">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">commander <img src="./assets/images/icons/phone_black_24dp.svg" alt="direction"></a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pd section">
-            <div class="row">
-                <div class="col s12 m6">
-                </div>
-                <div class="col s12 m6">
-                    <h3>Tidlf</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur ducimus autem dignissimos dolores voluptates sequi ipsam aperiam iste magni. Culpa, qui et corrupti voluptatibus vel labore delectus. Atque, maxime!s</p>
                 </div>
             </div>
         </section>
@@ -465,7 +467,11 @@
                             </table>
                         </div>
                         <div class="card-footer">
-                            <a href="" class="btn btn-right toggle-modal">Contacter <img src="/assets/images/icons/phone_black_24dp.svg" alt="icon"></a>
+                            <a class="btn  btn-riwaves-effect waves-light btn modal-trigger" href="#modal1">
+                                <i class="material-icons left red-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"></svg>
+                                </i> Contacter
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -494,7 +500,11 @@
                             </table>
                         </div>
                         <div class="card-footer">
-                            <a href="" class="btn btn-right toggle-modal">Contacter <img src="/assets/images/icons/phone_black_24dp.svg" alt="icon"></a>
+                            <a class="btn  btn-riwaves-effect waves-light btn modal-trigger" href="#modal1">
+                                <i class="material-icons left red-text">
+                                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+                                </i> Contacter
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -523,7 +533,11 @@
                             </table>
                         </div>
                         <div class="card-footer">
-                            <a href="" class="btn btn-right toggle-modal">Contacter <img src="/assets/images/icons/phone_black_24dp.svg" alt="icon"></a>
+                            <a class="btn  btn-riwaves-effect waves-light btn modal-trigger" href="#modal1">
+                                <i class red-text="material-icons left">
+                                    </svg></svg>
+                                </i> Contacter
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -544,9 +558,9 @@
                 <div class="col l3 s12 white-text">
                     <h5 class="white-text">Nos partenaires</h5>
                     <ul>
+                        <li><a class="white-text" href="#!">Eyanogroup</a></li>
                         <li><a class="white-text" href="#!">Aurora computing college</a></li>
-                        <li><a class="white-text" href="#!">Syg Consilting</a></li>
-                        <li><a class="white-text" href="#!">Posibility agency</a></li>
+                        <li><a class="white-text" href="#!">Ruby campany</a></li>
                         <li><a class="white-text" href="#!">etc ...</a></li>
                     </ul>
                 </div>

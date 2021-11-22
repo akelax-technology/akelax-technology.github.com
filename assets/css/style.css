@@ -57,7 +57,7 @@ nav {
 }
 
 .bdr {
-    border-radius: 14px;
+    border-radius: 14px !important;
 }
 
 main {
@@ -390,11 +390,11 @@ button {
 }
 
 .bdr-18 {
-    border-radius: 18px;
+    border-radius: 18px !important;
 }
 
 .bdr-12 {
-    border-radius: 12px;
+    border-radius: 12px !important;
 }
 
 .full-width {
@@ -402,9 +402,13 @@ button {
 }
 
 .btn {
-    border-radius: 9px;
+    border-radius: 14px;
     color: white;
     cursor: pointer;
+}
+
+.btn.btn-large {
+    border-radius: 18px;
 }
 
 .btn-right {
@@ -543,6 +547,7 @@ strong {
     background-color: #e8edfa !important;
     box-shadow: none;
     border: 1px solid #3459b6;
+    border-bottom: none;
 }
 
 .back-to-top:hover img {

@@ -71,6 +71,10 @@
     font-family: "Lexend-ExtraBold", sans-serif;
 }
 
+.text-justified {
+    text-align: justify;
+}
+
 
 /* 
 #487cff
@@ -162,7 +166,7 @@ nav a {
 
 .header-logo img {
     width: 60px;
-    animation: rotate 15s infinite 0s linear;
+    animation: rotate 36s infinite 0s linear;
 }
 
 .section-intro {

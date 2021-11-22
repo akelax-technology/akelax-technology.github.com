@@ -4,6 +4,9 @@ const toggleModalButton = document.querySelectorAll('.toggle-modal');
 const header = document.querySelector('header');
 
 document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var modal_instances = M.Modal.init(elems);
+
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, {
         indicators: true,
@@ -27,18 +30,6 @@ window.onscroll = handleScroll;
 
 const backToTopButton = document.querySelector('.back-to-top');
 
-isModalOpen = false;
-toggleModalButton.forEach(btn => {
-    btn.addEventListener('click', (event) => {
-        event.preventDefault();
-        toggleModal();
-    })
-})
-
-function toggleModal() {
-    modalContainer.style.display = isModalOpen ? 'none' : 'flex';
-    isModalOpen = !isModalOpen;
-}
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() { scrollFunction() };
