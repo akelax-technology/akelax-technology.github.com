@@ -14,12 +14,24 @@
     />
     <meta name="author" content="Akelax" />
 
-    <!-- Favicons -->
-    <link href="./assets/images/icons/lax_logo.png" rel="icon">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#3459b6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#3459b6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3459b6">
 
+    <!-- Favicons -->
+    <link href="./assets/images/logo/IMG-20211027-WA0007.jpg" rel="icon">
+
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/materialize.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYSSPHWGNH"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -33,29 +45,29 @@
 </head>
 
 <body class="">
-    <header class="white pd">
-        <nav class="z-depth-0 black-text">
-            <h1 class="principal-title"><a href="index.html">Akelax Technologie</a></h1>
+    <header class="pd">
+        <nav class="z-depth-2 white-text">
+            <a href="index.html" class="header-logo">
+                <img src="./assets/images/logo/lax_logo.png" alt="">
+            </a>
             <div class="nav-wrapper">
                 <ul id="nav-mobile" class="center hide-on-med-and-down">
                     <li><a href="/" id="">Acceuil</a></li>
-                    <li><a href="/#services" id="services-btn">Services</a></li>
+                    <li><a href="#services" id="services-btn">Services</a></li>
                     <li><a href="#tarif" id="tarif-btn">Tarif</a></li>
                     <li><a href="showcase.html">Réalisations</a></li>
                 </ul>
             </div>
             <div>
-                <a href="#contact" class="btn toggle-modal ">Contact</a>
+                <a href="#contact" class="btn white blue-text bdr z-depth-0 waves-effect waves-light modal-trigger" href="#modal1">Contact</a>
             </div>
         </nav>
     </header>
     <main class="p-relative">
-        <div class="modal-container">
-            <div class="modal white z-depth-5 p-relative">
-                <div class="modal-header">
-                    <h2>Nos Contacts</h2>
-                    <button class="grey-text text-darken-1 toggle-modal p-absolute">x</button>
-                </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Nos contacts</h4>
+                <p>A bunch of text</p>
                 <div class="modal-body">
                     <table>
                         <thead></thead>
@@ -79,78 +91,252 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+            </div>
+        </div>
+        <div class="modal-container">
+            <div class="modal white z-depth-5 p-relative">
+                <div class="modal-header">
+                    <h2>Nos Contacts</h2>
+                    <button class="grey-text text-darken-1 toggle-modal p-absolute">x</button>
+                </div>
                 <div class="modal-footer">
-                    <button class="btn toggle-modal">Fermer</button>
+                    <button class="waves-effect waves-light btn modal-trigger" href="#modal1">Fermer</button>
                 </div>
             </div>
         </div>
-        <section class="section-intro  grey lighten-4  p-relative">
+
+        <section class="pd bg-color-3">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 class="text-semibold center-align">Nos réalisations</h2>
             <div class="row">
-                <div class="col s12 m6 l6 xl6 grey lighten-4 intro-part-1">
-                    <div>
-                        <h2 class="title">
-                            <strong>
-                                Cette partie est encore<br> en <b class="blue-text text-lighten-2">
-                                    Development 
-                            </b><br>Merci.
-                            </strong>
-                        </h2>
-                        <a class="btn toggle-modal">Nous contacter<img src="./assets/images/arrow_right_alt_black_24dp.svg" alt="direction"></a>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6 xl6 intro-part-2">
-                    <div class="p-relative">
-                        <img class="picture" src="./assets/images/services/robin-glauser-zP7X_B86xOg-unsplash.jpg" alt="ullistration">
-                        <div class="p-absolute flag-container-2">
-                            <div class="flag white z-depth-5 bdr">
-                                <img src="./assets/images/phone_black_24dp.svg" alt="phone number">
-                                <strong>+243 816755166</strong>
-                            </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/realisations/Capture web_26-11-2021_135721_localhost.jpeg">
+                            <span class="card-title">Ruby track</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
                         </div>
                     </div>
                 </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/realisations/Capture web_26-11-2021_135721_localhost.jpeg">
+                            <span class="card-title">EyangoGo</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/realisations/Capture web_26-11-2021_135721_localhost.jpeg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/realisations/Capture web_26-11-2021_135721_localhost.jpeg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/realisations/Capture web_26-11-2021_135721_localhost.jpeg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="white lighten-4 section-tarif" id="tarif">
+            <h2 class="text-semibold">Tarif</h2>
+            <div class="row pd">
+                <div class="col s12 m6 l4 xl4 p-relative part-1">
+                    <div class="card white lighten-3 z-depth-1 bdr p-relative">
+                        <div class="card-header">
+                            <div class="flag p-absolute"><img src="./assets/images/icons/travel_explore_black_24dp.svg" alt=""></div>
+                            <h4>Site/appli web</h4>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Site vitrine</td>
+                                        <td>200<span class="green-text">$</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Site e-commence</td>
+                                        <td>500<span class="green-text">$</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Appli web pour entreprise</td>
+                                        <td>850<span class="green-text">$</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn  btn-riwaves-effect waves-light btn modal-trigger" href="#modal1">
+                                <i class="material-icons left red-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"></svg>
+                                </i> Contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 xl4">
+                    <div class="card white z-depth-4 bdr  p-relative">
+                        <div class="card-header">
+                            <div class="flag p-absolute"><img src="./assets/images/icons/devices_black_24dp.svg" alt=""></div>
+                            <h4>Appli mobile ou desktop</h4>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Appli de gestion</td>
+                                        <td>500<span class="green-text">$</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Appli de communication</td>
+                                        <td>700<span class="green-text">$</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Appli metier</td>
+                                        <td>800<span class="green-text">$</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn  btn-riwaves-effect waves-light btn modal-trigger" href="#modal1">
+                                <i class="material-icons left red-text">
+                                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+                                </i> Contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 xl4">
+                    <div class="card white lighten-3 z-depth-1 bdr p-relative">
+                        <div class="card-header">
+                            <div class="flag p-absolute"><img src="./assets/images/icons/electrical_services_black_24dp.svg" alt=""></div>
+                            <h4>Electricité & Electronique</h4>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Installation electrique de la maison</td>
+                                        <td>250<span class="green-text">$</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Electricité industrielle</td>
+                                        <td>600 <span class="green-text">$</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>conseption des systemes industrielles ou domotiques</td>
+                                        <td>à discuter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn  btn-riwaves-effect waves-light btn modal-trigger" href="#modal1">
+                                <i class red-text="material-icons left">
+                                    </svg></svg>
+                                </i> Contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="page-footer  grey lighten-3">
+
+    <footer class="page-footer  bg-color white-text">
         <div class="pd">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="">Merci de nous faire confiance</h5>
+                    <h5 class="white-text">Merci de nous faire confiance</h5>
                     <p class="">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
                 </div>
-                <div class="col l3 s12">
-                    <h5 class="">Nos partenaires</h5>
+                <div class="col l3 s12 white-text">
+                    <h5 class="white-text">Nos partenaires</h5>
                     <ul>
-                        <li><a class="" href="#!">Aurora computing college</a></li>
-                        <li><a class="" href="#!">Syg Consilting</a></li>
-                        <li><a class="" href="#!">Posibility agency</a></li>
-                        <li><a class="" href="#!">etc ...</a></li>
+                        <li><a class="white-text" href="#!">Eyanogroup</a></li>
+                        <li><a class="white-text" href="#!">Aurora computing college</a></li>
+                        <li><a class="white-text" href="#!">Ruby campany</a></li>
+                        <li><a class="white-text" href="#!">etc ...</a></li>
                     </ul>
                 </div>
-                <div class="col l3 s12">
-                    <h5 class="">Notre equipe</h5>
+                <div class="col l3 s12 white-text">
+                    <h5 class="white-text">Notre equipe</h5>
                     <ul>
-                        <li><a class="" href="https://merdi-akelax.github.io/">Merdi Akelax</a></li>
-                        <li><a class="" href="#!">Glodie Nsala</a></li>
-                        <li><a class="" href="">Gloire Belanganayi</a></li>
-                        <li><a class="" href="#!">Elie Junior</a></li>
-                        <li><a class="" href="#!">Michael Tshiala</a></li>
-                        <li><a class="" href="#!">Valentin Neron</a></li>
+                        <li><a class="white-text" href="https://merdi-akelax.github.io/">Merdi Akelax</a></li>
+                        <li><a class="white-text" href="#!">Glodie Nsala</a></li>
+                        <li><a class="white-text" href="">Gloire Belanganayi</a></li>
+                        <li><a class="white-text" href="#!">Elie Junior</a></li>
+                        <li><a class="white-text" href="#!">Michael Tshiala</a></li>
+                        <li><a class="white-text" href="#!">Valentin Neron</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright pd">
-            <div class="black-text">
+            <div class="white-text">
                 Esalemi epayi ya : <a class="blue-text" href="http://merdi-akelax.github.io">Merdi Akelax</a>
             </div>
         </div>
     </footer>
 
-    <button class="back-to-top blue-grey"><img src="/assets/images/icons/navigation_black_24dp.svg" alt=""></button>
+    <button class="back-to-top white z-depth-3"><img src="/assets/images/icons/navigation_black_24dp.svg" alt=""></button>
 
     <script src="./assets/js/app.js"></script>
 </body>
