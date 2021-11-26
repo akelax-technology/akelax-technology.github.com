@@ -136,6 +136,14 @@ nav a {
     background-color: #f5f5ff;
 }
 
+.pd5 {
+    padding: 5px;
+}
+
+.pd10 {
+    padding: 10px;
+}
+
 .pd20 {
     padding: 20px;
 }
@@ -182,10 +190,6 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.card-title {
-    text-shadow: 0 0px 9px #000000;
 }
 
 .scroll-affiche-container {
