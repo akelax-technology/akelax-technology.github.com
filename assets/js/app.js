@@ -2,37 +2,8 @@ const modalContainer = document.querySelector('.modal-container');
 const modal = document.querySelector('.modal');
 const toggleModalButton = document.querySelectorAll('.toggle-modal');
 const header = document.querySelector('header');
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var modal_instances = M.Modal.init(elems);
-
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, {
-        indicators: true,
-    });
-    var instance = M.Carousel.init(getElement('#carousel-1'), {
-        indicators: true,
-        fullWidth: true
-    });
-
-    setInterval(() => {
-        instance.next();
-    }, 4000);
-});
-
-
-const handleScroll = () => {
-    alert('dflsdf')
-}
-
-window.onscroll = handleScroll;
-
 const backToTopButton = document.querySelector('.back-to-top');
 
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -42,18 +13,6 @@ function scrollFunction() {
     }
 }
 
-backToTopButton.addEventListener('click', () => {
-    doScrollTo('body');
-});
-
-getElement('#tarif-btn').onclick = (event) => {
-    event.preventDefault();
-    doScrollTo('#tarif');
-}
-getElement('#services-btn').onclick = (event) => {
-    event.preventDefault();
-    doScrollTo('#services');
-}
 
 function doScrollTo(selector) {
     const ELEMENT = getElement(selector);
@@ -77,3 +36,38 @@ function doScrollTo(selector) {
 function getElement(selector) {
     return document.querySelector(selector);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var modal_instances = M.Modal.init(elems);
+
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+        indicators: true,
+    });
+    var instance = M.Carousel.init(getElement('#carousel-1'), {
+        indicators: true,
+        fullWidth: true
+    });
+
+    setInterval(() => {
+        instance.next();
+    }, 4000);
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() { scrollFunction() };
+
+    backToTopButton.addEventListener('click', () => {
+        doScrollTo('body');
+    });
+
+    getElement('#tarif-btn').onclick = (event) => {
+        event.preventDefault();
+        doScrollTo('#tarif');
+    }
+    getElement('#services-btn').onclick = (event) => {
+        event.preventDefault();
+        doScrollTo('#services');
+    }
+
+});
