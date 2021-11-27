@@ -174,7 +174,7 @@ nav a {
 
 .header-logo img {
     width: 60px;
-    animation: rotate 36s infinite 0s linear;
+    animation: rotate 33s infinite 0s linear;
 }
 
 .section-intro {
@@ -210,7 +210,7 @@ nav a {
     height: max-content;
     transform: translateY(-10%);
     margin-right: 20px;
-    animation: scroll 100s infinite 0s alternate-reverse linear;
+    animation: scroll 250s infinite 0s alternate-reverse linear;
 }
 
 .scroll-affiche-container li {
